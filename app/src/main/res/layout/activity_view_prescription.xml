@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100"
+    tools:context=".activities.prescMgr.common.ViewPrescriptionActivity">
+
+    <TextView
+        android:id="@+id/textView_vwpres"
+        android:layout_width="350dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="100dp"
+        android:text="View Prescription"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/student_name_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="15dp"
+        android:text="Name: "
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/create_prescription"
+        app:layout_constraintEnd_toStartOf="@+id/student_name_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.22000003" />
+
+    <TextView
+        android:id="@+id/student_name_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Student"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="@id/create_prescription"
+        app:layout_constraintStart_toEndOf="@+id/student_name_heading"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.22000003" />
+
+    <TextView
+        android:id="@+id/student_age_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:text="Age: "
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/create_prescription"
+        app:layout_constraintStart_toEndOf="@+id/student_name_view"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.22000003" />
+
+    <TextView
+        android:id="@+id/student_age_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="8dp"
+        android:text="Age"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toEndOf="@+id/student_age_heading"
+        app:layout_constraintBottom_toBottomOf="@id/create_prescription"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.22000003"/>
+
+    <TextView
+        android:id="@+id/student_id_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:text="Student Id: "
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/create_prescription"
+        app:layout_constraintStart_toEndOf="@+id/student_age_view"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.22000003" />
+
+    <TextView
+        android:id="@+id/student_id_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text=""
+        android:textAllCaps="false"
+        app:layout_constraintStart_toEndOf="@+id/student_id_heading"
+        app:layout_constraintBottom_toBottomOf="@id/create_prescription"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.22000003" />
+
+    <TextView
+        android:id="@+id/st_date_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="50dp"
+        android:text="Start Date"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:weightSum="70"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_vwpres" />
+
+    <TextView
+        android:id="@+id/exp_date_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Expiry Date"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:weightSum="70"
+        app:layout_constraintStart_toStartOf="@+id/st_date_view"
+        app:layout_constraintTop_toBottomOf="@+id/st_date_view" />
+
+    <TextView
+        android:id="@+id/textView_med"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Medicine"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:weightSum="70"
+        app:layout_constraintStart_toStartOf="@+id/exp_date_view"
+        app:layout_constraintTop_toBottomOf="@+id/exp_date_view" />
+
+    <TextView
+        android:id="@+id/textView_pwr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Power"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:weightSum="70"
+        app:layout_constraintStart_toStartOf="@+id/textView_med"
+        app:layout_constraintTop_toBottomOf="@+id/textView_med" />
+
+    <TextView
+        android:id="@+id/textView_medcnt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Medicine Count"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView_pwr"
+        app:layout_constraintTop_toBottomOf="@+id/textView_pwr" />
+
+    <TextView
+        android:id="@+id/textView_sts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="Status"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView_medcnt"
+        app:layout_constraintTop_toBottomOf="@+id/textView_medcnt" />
+
+    <EditText
+        android:id="@+id/textView_data_st_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10/30/2018"
+        android:textSize="18sp"
+        android:weightSum="30"
+        app:layout_constraintBaseline_toBaselineOf="@+id/st_date_view"
+        app:layout_constraintStart_toStartOf="@+id/textView_data_exp_date" />
+
+    <EditText
+        android:id="@+id/textView_data_exp_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="11/10/2018"
+        android:textSize="18sp"
+        android:weightSum="30"
+        app:layout_constraintBaseline_toBaselineOf="@+id/exp_date_view"
+        app:layout_constraintStart_toStartOf="@+id/textView_dat_med" />
+
+    <EditText
+        android:id="@+id/textView_dat_med"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ibux"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView_med"
+        app:layout_constraintStart_toStartOf="@+id/textView_dat_pwr" />
+
+    <EditText
+        android:id="@+id/textView_dat_pwr"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="250mg"
+        android:textSize="18sp"
+        android:weightSum="30"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView_pwr"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.722"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/textView_dat_medcnt"
+        android:layout_width="29dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="69dp"
+        android:layout_marginBottom="69dp"
+        android:clickable="false"
+        android:text="10"
+        android:textSize="18sp"
+        android:weightSum="30"
+        app:layout_constraintBottom_toBottomOf="@+id/spinner_vw_status"
+        app:layout_constraintStart_toStartOf="@+id/textView_dat_pwr"
+        app:layout_constraintTop_toBottomOf="@+id/textView_med" />
+
+    <Spinner
+        android:id="@+id/spinner_vw_status"
+        android:layout_width="210dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="16dp"
+        android:clickable="false"
+        android:entries="@array/status_array"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView_sts"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView_sts" />
+
+    <Button
+        android:id="@+id/button_edit_ps"
+        android:layout_width="180dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="97dp"
+        android:background="@drawable/rounded_button"
+        android:text="Edit Prescription"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_save"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_vw_status"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="-9dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <android.support.constraint.Barrier
+        android:id="@+id/barrier2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top"
+        tools:layout_editor_absoluteY="511dp" />
+
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="80dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/rounded_button"
+        android:text="Save"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button_edit_ps"
+        app:layout_constraintStart_toEndOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_vw_status"
+        app:layout_constraintVertical_bias="0.0" />
+</android.support.constraint.ConstraintLayout>
